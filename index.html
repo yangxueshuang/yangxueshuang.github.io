@@ -2,4 +2,72 @@
 layout: default
 title: Home
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('https://img2.imgtp.com/2024/05/09/c7G0LmTI.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    }
+
+    .main-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    h1 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    }
+
+    nav {
+    display: flex;
+    }
+
+    nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    }
+</style>
+</head>
+<style>
+    /* 修改 "Hello World!" 字体 */
+    h1 {
+        font-family: Arial, sans-serif;
+    }
+
+    /* 修改 "欢迎来到我的博客" 字体 */
+    .welcome-text {
+        font-family: "Microsoft YaHei", sans-serif;
+    }
+</style>
+
+<div class="container" style="background-image: url('https://img2.imgtp.com/2024/05/09/c7G0LmTI.jpgws'); background-size: cover; background-position: center;">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-6">
+            <h1>{{ "Hello World!" | downcase }}</h1>
+            <div style="background-color: #defef8;box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+                <p class="welcome-text">欢迎来到我的博客</p>
+            </div>
+        </div>
+    </div>
+</div>

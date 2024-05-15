@@ -30,55 +30,7 @@
   
 </nav>
 
-    <style>
-    body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-image: url('https://img2.imgtp.com/2024/05/09/c7G0LmTI.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    }
-
-    .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    }
-
-    .main-content {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-
-    h1 {
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    }
-
-    nav {
-    display: flex;
-    }
-
-    nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px;
-    }
-</style>
-</head>
-<style>
-    /* 修改 "Hello World!" 字体 */
+        /* 修改 "Hello World!" 字体 */
     h1 {
         font-family: Arial, sans-serif;
     }
@@ -94,10 +46,35 @@
         <div class="col-md-6">
             <h1>hello world!</h1>
             <div style="background-color: #defef8;box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-                <p class="welcome-text">欢迎来到我的博客</p>
+                <p class="welcome-text">欢迎来到我的博客，下面是轮播的图片</p>
             </div>
         </div>
     </div>
+</div>
+<div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>   
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="https://www.bing.com/images/search?view=detailV2&ccid=tNWa8VOP&id=F91EA6714A88D8505D67D8342A5D184912125946&thid=OIP.tNWa8VOPhottSTBKXQW8AAHaKu&mediaurl=https%3a%2f%2fc-ssl.dtstatic.com%2fuploads%2fblog%2f202112%2f28%2f20211228194947_6f92f.thumb.1000_0.jpg&exph=1448&expw=1000&q=%e5%91%a8%e7%bf%8a%e7%84%b6%e5%9b%be%e7%89%87&simid=608012205595183733&FORM=IRPRST&ck=1D7E4D12AA22D89C3CC75F4D85A0E325&selectedIndex=3&itb=0" alt="First slide">
+        </div>
+        <div class="item">
+            <img src="https://th.bing.com/th/id/OIP.05gpynE2Usk1GY8uIE3OOgHaNK?w=187&h=333&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Second slide">
+        </div>
+        <div class="item">
+            <img src="https://th.bing.com/th/id/OIP.xC3W4cz4NSarg4ytzUI-5wHaLH?w=189&h=284&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Third slide">
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel" 
+       data-slide="prev"> <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
+    <a class="carousel-control right" href="#myCarousel" 
+       data-slide="next">&rsaquo;</a>
 </div>
   </body>
 </html>
